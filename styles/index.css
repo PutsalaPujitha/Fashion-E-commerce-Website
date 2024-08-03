@@ -1,0 +1,72 @@
+/* General styling for all pages */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Styling for the header */
+header {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    overflow: hidden;
+    text-align: center;
+    background: url('../images/bg3.jpg') no-repeat center center/cover; /* Background image */
+}
+
+header h1 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff; /* Change text color to white for better contrast */
+    z-index: 10;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.slider {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    min-width: 100%;
+    transition: 0.5s;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the slider area */
+}
+
+.shop-now-buttons {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    z-index: 10;
+}
+
+.shop-now-buttons button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.shop-now-buttons button:hover {
+    background-color: #555;
+    opacity: 1;
+}

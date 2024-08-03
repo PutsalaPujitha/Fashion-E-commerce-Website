@@ -1,0 +1,166 @@
+/* General styling for all pages */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Styling for the header */
+header {
+    background-color: #f0f0f0; /* Example background color */
+    text-align: center; /* Center align text within header */
+    padding: 10px 0; /* Add some padding at the top and bottom */
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 2em; /* Adjust font size as needed */
+    color: #333; /* Example text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+    flex-grow: 1; /* Allow title to grow to take up available space */
+    text-align: center;
+}
+
+header #viewCartBtn {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+header #viewCartBtn:hover {
+    opacity: 1;
+}
+
+header #backHomeBtn {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+header #backHomeBtn:hover {
+    opacity: 1;
+}
+
+/* Styling for the category section */
+.category {
+    position: relative; /* Establish stacking context */
+    text-align: center; /* Center align text within the section */
+    background-image: url('../images/bg9.png'); /* Adjust path relative to CSS file */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the background image */
+    height: calc(100vh - 100px); /* Adjusted height to leave space for header */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    position: relative;
+}
+
+.product-image {
+    position: relative;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.add-to-cart-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    display: none;
+}
+
+.product-image:hover .add-to-cart-btn {
+    display: block;
+}
+
+.cart-message {
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: green;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Modal for cart details */
+.cart-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.cart-modal h2 {
+    margin-top: 0;
+}
+
+.cart-modal ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart-modal li {
+    padding: 5px 0;
+}
+
+.cart-modal button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.cart-modal button:hover {
+    opacity: 1;
+}

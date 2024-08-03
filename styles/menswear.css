@@ -1,0 +1,58 @@
+/* General styling for all pages */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Styling for the header */
+header {
+    background-color: #f0f0f0; /* Example background color */
+    text-align: center; /* Center align text within header */
+    padding: 10px 0; /* Add some padding at the top and bottom */
+}
+
+header h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 2em; /* Adjust font size as needed */
+    color: #333; /* Example text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+}
+
+/* Styling for the category section */
+.category {
+    position: relative; /* Establish stacking context */
+    text-align: center; /* Center align text within the section */
+    background-image: url('../images/bg21.jpg'); /* Adjust path relative to CSS file */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the background image */
+    height: calc(100vh - 100px); /* Adjusted height to leave space for header */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Container for the buttons */
+.button-container {
+    position: absolute;
+    bottom: 20px; /* Adjust distance from the bottom */
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.button-container button {
+    padding: 10px 20px; /* Add padding inside the button */
+    background-color: #000; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    opacity: 0.8; /* Slight transparency */
+    transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.button-container button:hover {
+    opacity: 1; /* Full opacity on hover */
+}
